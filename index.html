@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -27,10 +29,10 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#motovun">Place to Go</a>
+            <a class="nav-link" href="#beaches">Adriatic Allure</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#beaches">Beautiful beaches</a>
+            <a class="nav-link" href="#motovun">Place to Go</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#lakes">Lakes</a>
@@ -50,11 +52,13 @@
       color: #333;
     }
 
-
     h1 {
       text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: -webkit-xxx-large;
+      font-weight: 800;
+      font-style: normal;
       color: #f1f3f5;
-      font-size: 90px;
       text-decoration: solid;
       margin-bottom: 10px;
       background: #0f0d8f;
@@ -70,10 +74,6 @@
       margin: 0 auto;
       max-width: 80%;
       border-radius: 8px;
-    }
-
-    .navbar {
-      background-color: #1e3d59;
     }
 
     .navbar-brand,
@@ -96,15 +96,30 @@
 
 
 <body>
-  <h1 class="text-uppercase border p-2 m-2 rounded">Go to Croatia<img src="background.jpg"
-      class="border-radius p-2 shadow" alt="fons" width="200"></h1>
-  <h3 class="text-center fst-italic">Why I love Croatia</h3>
+  <div class="container">
+
+  </div>
+  <h1 class="text-uppercase border p-2 m-2 rounded ">Welcome to Ultimate Croatian Adventure
+
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="dubrovnik1.jpg" class="img-fluid shadow-sm p-2 border" alt style="margin-top: 70px;">
+      </div>
+      <div class="col-sm-4">
+        <img src="background.jpg" class="img-fluid rounded shadow-sm p-2 border" alt="" width="300">
+      </div>
+      <div class="col-sm-4">
+        <img src="dubrovnik.jpg" class="img-fluid rounded shadow-sm p-2 border" alt style="margin-top: 55px;">
+      </div>
+    </div>
+  </h1>
+  <h3 class="text-center">Why I love Croatia</h3>
   <p class="fst-italic">Whether you love Croatia for its stunning landscapes, rich history, delicious food, or warm
     people, it's a
     destination
     that leaves a lasting impression on those who visit. Croatia is a beautiful country with a lot to offer, and there
     are many reasons why people fall in love with it. Just follow me and you will understand.</p>
-  <div id="carouselExampleCaptions" class="carousel slide mb-2 border shadow">
+  <div id="carouselExampleCaptions" class="carousel slide p-2 m-4 border shadow">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -118,7 +133,7 @@
         <img src="beach1.jpg" id="beaches" class="d-block w-50" alt="beaches">
         <div class="carousel-caption d-none d-md-block">
           <h5>Beautiful Beaches</h5>
-          <p>Croatia is home to some of the most beautiful beaches in the world, with crystal-clear waters
+          <p>Croatia is home to some of the most beautiful beaches, with crystal-clear waters
             and
             stunning
             landscapes.
@@ -165,21 +180,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="motovun.jpg" alt="" class="img-fluid rounded border shadow p-2" />
+        <img src="motovun.jpg" alt="" class="img-fluid rounded border shadow p-2 m-3" />
       </div>
       <div class="col-md-6">
-        <h2 id="motovun" class="mb-3">Motovun</h2>
+        <h2 id="motovun" class="mb-3 p-3">Motovun</h2>
         <p>
-          On the slopes of Istria, among olive fields and truffle-rich forests, lies the heart of the Middle Ages - the
+          On the slopes of Istria, among olive fields and truffle-rich forests, lies the heart of the Middle Ages -
+          the
           town of
-          Motovun. It has a reputation as the most charming town in Croatia. This mountaintop town arose from the ruins
+          Motovun. It has a reputation as the most charming town in Croatia. This mountaintop town arose from the
+          ruins
           of the
-          ancient Roman settlement of Kastalier, which flourished in the 10th century. Now the atmosphere is imbued with
+          ancient Roman settlement of Kastalier, which flourished in the 10th century. Now the atmosphere is imbued
+          with
           a unique
           Italian-Slavic charm, the aroma of truffles and freshly baked pies.
         </p>
         <div>
-          <a href="#" class="projects-link">back home</a>
+          <a href="#" class="projects-link"></a>
         </div>
       </div>
     </div>
@@ -188,7 +206,8 @@
       <div class="col-md-6">
         <h2 class="mb-3 mt-5">Trogir</h2>
         <p>
-          Trogir is a rocky island on the Adriatic coast, UNESCO World Heritage Site Trogir is steeped in the history of
+          Trogir is a rocky island on the Adriatic coast, UNESCO World Heritage Site Trogir is steeped in the history
+          of
           Ancient Greece, the
           Roman Empire, the Republic of Venice and modern Croatia. The city centre is criss-crossed by narrow streets
           where
@@ -196,9 +215,7 @@
           Kamerlengo
           fortress and the Romanesque Cathedral are surrounded by cosy pizzerias and wine bars.
         </p>
-        <div>
-          <a href="#" class="projects-link">back home</a>
-        </div>
+
       </div>
 
       <div class="col-md-6">
@@ -212,13 +229,17 @@
       <div class="col-md-6">
         <h2 class="mb-3 mt-5">Split</h2>
         <p>
-          Split is a Croatian port and resort city that keeps many secrets. Annually it attracts thousands of tourists.
+          Split is a Croatian port and resort city that keeps many secrets. Annually it attracts thousands of
+          tourists.
           Different
           epochs and cultures meet there: modern concrete and glass constructions are found side by side with the
           survived houses
-          of the 15th – 19th centuries. The locals draw an analogy with clotheslines, which connect different houses as
-          Split is a Croatian port and resort city that keeps many secrets. Annually it attracts thousands of tourists.
-          A cozy Split is located in the center on the Adriatic coast. The food industry, including fish processing and
+          of the 15th – 19th centuries. The locals draw an analogy with clotheslines, which connect different houses
+          as
+          Split is a Croatian port and resort city that keeps many secrets. Annually it attracts thousands of
+          tourists.
+          A cozy Split is located in the center on the Adriatic coast. The food industry, including fish processing
+          and
           wine production, is also well-developed
           here.
           Azure sea, the imperial castle, cozy cafes, and noisy markets create a unique mood for everyone who has been
@@ -226,7 +247,7 @@
           incredible city.
         </p>
         <div>
-          <a href="#" class="projects-link mt-3 mb-5">back home</a>
+          <a href="#" class="projects-link m-5 mb-6">🔼 to the top</a>
         </div>
       </div>
     </div>
@@ -253,8 +274,10 @@
       </div>
     </div>
     <p>
-      Beyond the coast, Croatia has stunning national parks such as Plitvice Lakes and Krka, known for their waterfalls,
-      lakes, and lush landscapes. These parks offer excellent hiking opportunities and a chance to experience Croatia's
+      Beyond the coast, Croatia has stunning national parks such as Plitvice Lakes and Krka, known for their
+      waterfalls,
+      lakes, and lush landscapes. These parks offer excellent hiking opportunities and a chance to experience
+      Croatia's
       natural wonders.
     </p>
   </div>
